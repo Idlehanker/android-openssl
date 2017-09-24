@@ -6,7 +6,8 @@ set -e
 rm -rf prebuilt
 mkdir prebuilt
 
-archs=(armeabi arm64-v8a mips mips64 x86 x86_64)
+# archs=(armeabi arm64-v8a mips mips64 x86 x86_64)
+archs=(armeabi armeabi-v7a x86)
 
 for arch in ${archs[@]}; do
     xLIB="/lib"
@@ -78,4 +79,3 @@ for arch in ${archs[@]}; do
     cd ..
 done
 exit 0
-
